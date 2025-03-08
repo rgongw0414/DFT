@@ -2,24 +2,23 @@
 
 ## Why do we need DFT?
 
-```markdown
 1. **Verify** the manufatured chips
-2. Dimish system **cost**
-	*** Cost of repair goes up by an order of magnitude each step away from fab line**
-		**a. Fab line (IC test)**:
-			* Fab line is where the chips initially manufatured. At this stage, 
+2. Dimish system **cost**:
+   * Cost of repair goes up by an order of magnitude each step away from fab line
+
+   1. Fab line (IC test):
+      * Fab line is where the chips initially manufatured. At this stage, 
 			  the defects/faults are cheapest to identify and correct because they are 
 			  not packaged yet.
-			* Tools like **automatic test equipment (ATE)** and **wafer-level testing (e.g., probe card)** are used here.
-		**b. Packaging: 
-		  *** Chips are packaged and ready for integration into a system.
-		**c. Board-level testing:**
-		  * Packaged chips are integrated onto circuit boards. If a defect is discovered, the entire board may have to be discard.
-		**d. System-level testing:**  
-		  * Boards are integrated into a system or device.
-		**e. In the field (End-user stage)**
+      * Tools like **automatic test equipment (ATE)** and **wafer-level testing (e.g., probe card)** are used here.
+   2. Packaging: 
+      * Chips are packaged and ready for integration into a system
+   3. Board-level testing:
+      * Packaged chips are integrated onto circuit boards. If a defect is discovered, the entire board may have to be discard.
+   4. System-level testing:
+      * Boards are integrated into a system or device.
+   5. In the field (End-user stage)
 3. Improve system **reliability** (prevent errors occur)
-```
 
 ![image.png](imgs/image.png)
 
