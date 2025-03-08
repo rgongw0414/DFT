@@ -1,9 +1,17 @@
 # DFT (Design for Testability)
 
+## Contents
+### 1. [Fault Models](#fault-models)
+* [Stuck-at Faults](#multiple-stuck-at-faults-msfs)
+* [Bridging Faults](#bridging-faults-bfs)
+  
+### 2. [Quality of Testing](#quality-of-testing)
+### 3. [Low-Power Testing](#low-power-testing)
+
 ## Why do we need DFT?
 
 1. **Verify** the manufatured chips
-2. Dimish system **cost**:
+2. Dimish system **cost**
    * Cost of repair goes up by an order of magnitude each step away from fab line
 
    1. Fab line (IC test):
