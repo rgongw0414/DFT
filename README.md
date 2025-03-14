@@ -295,7 +295,7 @@ $Defect\ Level = 1 - Y^{1-FC}$ (*Brown & Williams* **Model**)
     1. Test Mode (Slow clock)
         1. To initiate the transition, scan-in the first vector in FFs in test mode ($t_0$ to $t_3$)
         2. To launch the transition, pulse one more clock to obtain the second vector 
-            - The transition is launched at $t_4$ while **the FFs are capturing data from the preceding FFs, where the FFs are shifting data**, ****hence it’s called LAUNCH **ON SHIFT**
+            - The transition is launched at $t_4$ while **the FFs are capturing data from the preceding FFs, where the FFs are shifting data**, hence it’s called LAUNCH **ON SHIFT**
         3. Deassert SE, enter function mode (fast clock)
     2. Function Mode
         1. Pulse one clock to **capture** the test result (H/L) in FF4
@@ -326,7 +326,7 @@ $Defect\ Level = 1 - Y^{1-FC}$ (*Brown & Williams* **Model**)
         2. Deassert SE, enter function mode (fast clock)
     2. Function Mode (Fast clock)
         1. To **launch** the transition, pulse one clock to obtain the second vector in FF3 & FF4 ↔ Fire the cannons
-            - The transition is **launch at $t_6$**, i.e., ****launch **while the FFs are capturing data from the preceding combinational logics**, ****hence it’s called LAUNCH **ON CAPTURE**
+            - The transition is **launch at $t_6$**, i.e., **launch while the FFs are capturing data from the preceding combinational logics**, **hence it’s called LAUNCH ON CAPTURE**
         2. Pulse one more clock to **capture** the test result (H/L) in FF5 ↔ Fire one more time
         3. Assert SE, go back to test mode to scan-out H/L in FF5
     3. Test Mode
