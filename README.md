@@ -2,7 +2,9 @@
 
 ## Contents
 ### [Fault Models](#fault-models)
-* [Stuck-at Faults](#single-stuck-at-faults-ssf)
+* [Stuck-at Faults](#stuck-at-faults)
+  * [Single Stuck-at Faults (SSF)](#single-stuck-at-faults-ssf)
+  * [Multiple Stuck-at Faults (MSF)](#multiple-stuck-at-faults-msfs)
 * [Bridging Faults](#bridging-faults-bfs)
 * [Delay Faults](#delay-faults)
   
@@ -89,7 +91,9 @@
 
 <img src="imgs/image%2010.png" width="600"/>
 
-## Single Stuck-at Faults (SSF)
+## Stuck-at Faults
+
+### Single Stuck-at Faults (SSF)
 * One signal line (net) in the network of logic gates is fixed to logic 0 or logic 1
   * 2 SSFs (s@1 or s@0) per node
 * Short Circuits: A short between a node and power (Vdd) or ground (Gnd)
@@ -104,7 +108,7 @@
 
 <img src="imgs/image%202.png" width="600"/>
 
-## Multiple Stuck-at Faults (MSFs)
+### Multiple Stuck-at Faults (MSFs)
 
 - Each node got 3 possible states: sa1, sa0, fault-free
 - Single stuck-at fault model can detect most of the MSFs (except for the masked faults)
