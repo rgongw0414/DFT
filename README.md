@@ -41,7 +41,7 @@
    5. In the field (End-user stage)
 3. Improve system **reliability** (prevent errors occur)
 
-![image.png](imgs/image.png)
+<img src="imgs/image.png" alt="LoS Test"/>
 
 # Logic Simulation
 
@@ -52,12 +52,12 @@
 ### Ternary Logic is not accurate
 
 - Whether B is 0 or 1, K will always be 0.
-    
-    ![imgs/image.png](imgs/image%203.png)
-    
+  
+    <img src="imgs/image%203.png" width="600"/>
+   
 - Resolution:
     
-    ![imgs/image.png](imgs/image%204.png)
+    <img src="imgs/image%204.png" width="600"/>
     
 
 ### Input Scannign algorithm
@@ -65,28 +65,29 @@
 - Using **truth table** takes **huge memory** to determine the output value of logic gates
 - Not Efficient for multi-input logic gates
 
-![imgs/image.png](imgs/image%205.png)
+
+<img src="imgs/image%205.png" width="600"/>
 
 - By scanning ***controlling values*** and ***unknown values***, efficiently determine the gate output in **logic simulation**
     
-    ![imgs/image.png](imgs/image%206.png)
+    <img src="imgs/image%206.png" width="600"/>
     
 
 # Fault Models
 
 - Def: **The methods (models) used to determine whether the target faults exist in the CUT**
 
-![imgs/image.png](imgs/image%207.png)
+<img src="imgs/image%207.png" width="600"/>
 
 ### Defect → Fault → Error → Failure
 
-![imgs/image.png](imgs/image%208.png)
+<img src="imgs/image%208.png" width="600"/>
 
-![imgs/image.png](imgs/image%209.png)
+<img src="imgs/image%209.png" width="600"/>
 
 ## Why Fault Modeling?
 
-![imgs/image.png](imgs/image%2010.png)
+<img src="imgs/image%2010.png" width="600"/>
 
 ## SSF
 * One signal line (net) in the network of logic gates is fixed to logic 0 or logic 1
@@ -99,9 +100,9 @@
   * Mechanical Damage:
       * Handling errors, such as during packaging or mounting on a PCB, can damage the circuit and lead to faults.
 
-![imgs/image.png](imgs/image%201.png)
+<img src="imgs/image%201.png" width="600"/>
 
-![imgs/image.png](imgs/image%202.png)
+<img src="imgs/image%202.png" width="600"/>
 
 ## Multiple Stuck-at Faults (MSFs)
 
@@ -110,20 +111,20 @@
     - Fault Masking: Fault f2 mask fault f1, if 
     A test for f1 fails to detect f2, in the presense of f2.
 
-![imgs/image.png](imgs/image%2011.png)
+<img src="imgs/image%2011.png" width="600"/>
 
 ## Bridging Faults (BFs)
 
 - **Fault extraction**: There’re too many BFs in a circuit, so we need a physical tool to inspect where is more likely to have BFs due to neighbor signals
 
-![imgs/image.png](imgs/image%2012.png)
+<img src="imgs/image%2012.png" width="600"/>
 
 - BF does not consider Shorts to power or ground (they are counted as s@ faults)
 - BF does not consider intra-cell (intra-gate) defects, because BF is gate-level, not transistor-level fault model
 - BF does not distinguish b/w **fanout stem** and **branches (unlike s@ faults)**
     - E.g., Both the input of $G_2$   are $A*(B+C)$, so $G_2$  is quivalent to a logic 1
 
-![imgs/image.png](imgs/image%2013.png)
+<img src="imgs/image%2013.png" width="600"/>
 
 - BF is **not transient fault,** it is a **Permanent faults**
     - **Transient fault**: Not always present, which is induced by environmental (Electromagnetic interference , EMI) or internal (IR drop) disturbance
@@ -132,20 +133,20 @@
 
 ### Wired-OR/-AND Models
 
-![imgs/image.png](imgs/image%2014.png)
+<img src="imgs/image%2014.png" width="600"/>
 
 ### SSF Test Sets for BFs
 
 - Not good enough, because **the feedback BFs are not detected**
 - We have to apply wire-OR/-AND BF models to detect the feedback BFs
 
-![imgs/image.png](imgs/image%2015.png)
+<img src="imgs/image%2015.png" width="600"/>
 
-![imgs/image.png](imgs/image%2016.png)
+<img src="imgs/image%2016.png" width="600"/>
 
 ## Delay Faults
 
-![Slow-to-fall delay falut](imgs/image%2017.png)
+<img src="imgs/image%2017.png" width="600"/>
 
 Slow-to-fall delay falut
 
@@ -153,13 +154,13 @@ Slow-to-fall delay falut
 - How to detect delay faults?
     - Global delay fault: Test the frequency of the monitor
     
-    ![imgs/image.png](imgs/image%2018.png)
+    <img src="imgs/image%2018.png" width="600"/>
     
     - Local delay fault
 
-![imgs/image.png](imgs/image%2019.png)
+<img src="imgs/image%2019.png" width="600"/>
 
-![imgs/image.png](imgs/image%2020.png)
+<img src="imgs/image%2020.png" width="600"/>
 
 ### Path Delay Fault (PDF) model
 
@@ -170,7 +171,7 @@ Slow-to-fall delay falut
 - Two PAFs for **each PATH**: Rising ↑ & Falling ↓
     - Number of total faults: In worst-case, taking exponential time to exaustively test all paths, so usually only the paths on the **path-list** are considered
     
-    ![imgs/image.png](imgs/image%2021.png)
+    <img src="imgs/image%2021.png" width="600"/>
     
 
 ### Transition Delay Fault (TDF) model
@@ -184,10 +185,10 @@ Slow-to-fall delay falut
     - PDF model is more accurate, but complicated to implement for ATPG;
     - TDF is less accurate, so it is easier for ATPG
     
-    ![imgs/image.png](imgs/image%2022.png)
+    <img src="imgs/image%2022.png" width="600"/>
     
 
-## **Limitations of Fault Models** (U**nmodeled Faults)**
+## **Limitations of Fault Models** (**Unmodeled Faults)**
 
 - Def: While achieving **100% FC for a specific fault model** (e.g., stuck-at faults) ensures all faults of that type are tested, it **does not guarantee the detection of faults or errors outside the scope of that model**.
 - **Root Cause**: Faults are actually **ABSTRACTIONs of the defects**, so faults can’t 100% reflect the physical-level defects in digital ciruits
@@ -197,7 +198,7 @@ Slow-to-fall delay falut
 
 # Quality of Testing
 
-![imgs/image.png](imgs/image%2023.png)
+<img src="imgs/image%2023.png" width="600"/>
 
 ## FC & DL (DPM)
 
@@ -212,30 +213,30 @@ $Defect\ Level = 1 - Y^{1-FC}$ (*Brown & Williams* **Model**)
 
 # SCAN CHAIN
 
-![imgs/image.png](imgs/image%2024.png)
+<img src="imgs/image%2024.png" width="600"/>
 
-![imgs/image.png](imgs/image%2025.png)
+<img src="imgs/image%2025.png" width="600"/>
 
 ## Design Rule Check (DRC)
 
-![imgs/image.png](imgs/image%2026.png)
+<img src="imgs/image%2026.png" width="600"/>
 
-![imgs/image.png](imgs/image%2027.png)
+<img src="imgs/image%2027.png" width="600"/>
 
 ## Gated Clock
 
-![imgs/image.png](imgs/image%2028.png)
+<img src="imgs/image%2028.png" width="600"/>
 
-![imgs/image.png](imgs/image%2029.png)
+<img src="imgs/image%2029.png" width="600"/>
 
 - Use FF, so the enable must hold long enough to start pulsing the clock
 - Only start pulsing the clock when SE in up
 
-![imgs/image.png](imgs/image%2030.png)
+<img src="imgs/image%2030.png" width="600"/>
 
 ### Combinational Feedback Loop
 
-![imgs/image.png](imgs/image%2031.png)
+<img src="imgs/image%2031.png" width="600"/>
 
 ## Scan Cell (Flip-Flop, Latch)
 
@@ -243,16 +244,16 @@ $Defect\ Level = 1 - Y^{1-FC}$ (*Brown & Williams* **Model**)
 - We can observe faults in scan-output or the primary output (PO)
 - SFF has two functions: ***shift*** and ***capture***
 
-![imgs/image.png](imgs/image%2032.png)
+<img src="imgs/image%2032.png" width="600"/>
 
-![imgs/image.png](imgs/image%2033.png)
+<img src="imgs/image%2033.png" width="600"/>
 
 ### Control Points
 
 - Overhead: An Extra MUX and a DFF
 - SFF: DFF + MUX
 
-![imgs/image.png](imgs/image%2034.png)
+<img src="imgs/image%2034.png" width="600"/>
 
 ### Observation Points
 
@@ -260,7 +261,7 @@ $Defect\ Level = 1 - Y^{1-FC}$ (*Brown & Williams* **Model**)
 - SFF: MUX + DFF
 - Pulse one clock to load the data into DFFs, then set SE=1 and scan out the data
 
-![imgs/image.png](imgs/image%2035.png)
+<img src="imgs/image%2035.png" width="600"/>
 
 ## Crossing Clock Domain
 
@@ -268,26 +269,26 @@ $Defect\ Level = 1 - Y^{1-FC}$ (*Brown & Williams* **Model**)
 
 ### Solution_1: ***Lock-up Latch***
 
-![imgs/image.png](imgs/image%2036.png)
+<img src="imgs/image%2036.png" width="600"/>
 
-![imgs/image.png](imgs/image%2037.png)
+<img src="imgs/image%2037.png" width="600"/>
 
 ### Solution_2: Clock Grouping
 
 - If two clock domains have a lots interaction (long comb circuit b/w them), they might have large ***clock skew*** b/w them, so they cannot form a scan chain.
 - That means we have to find the CDs which have NO interaction b/w them
 
-![imgs/image.png](imgs/image%2038.png)
+<img src="imgs/image%2038.png" width="600"/>
 
 ### Mixed negedge-/posedge-FFs
 
-![imgs/image.png](imgs/image%2039.png)
+<img src="imgs/image%2039.png" width="600"/>
 
 ## LoS & LoC (Detecting Delay Faults)
 
 ### LoS (Launch on Shift, Skewed-load Test)
 
-![imgs/IMG_0256.JPEG](imgs/IMG_0256.jpeg)
+<img src="imgs/IMG_0256.png" width="600"/>
 
 - The transition is launched at $t_4$ (while in TEST MODE, aka SHIFTING TESTING PATTERNS)
 - Procedure of LoS:
@@ -304,20 +305,20 @@ $Defect\ Level = 1 - Y^{1-FC}$ (*Brown & Williams* **Model**)
 - Since SE is a global signal, consequently, to de/assert the signal, it might suffer from long delay as it takes time from the PI to the FFs, then cause incorrect test result (false positive or false negative).
     - If SE pull-down dealy > path/gate delay, the capture clock cannot capture the fault.
         
-        ![imgs/IMG_0260.JPEG](imgs/IMG_0260.jpeg)
+        <img src="imgs/IMG_0260.png" width="600"/>
         
 
 ### LoC (Launch on Capture, Broadside Test)
 
 - Broadside: 舷側
 
-![imgs/image.png](imgs/image%2040.png)
+<img src="imgs/image%2040.png" width="600"/>
 
 - In Pirates of the Caribbean:
 
 [https://www.youtube.com/watch?v=PEaZ5XUe0Mk](https://www.youtube.com/watch?v=PEaZ5XUe0Mk)
 
-![imgs/IMG_0259.JPEG](imgs/IMG_0259.jpeg)
+<img src="imgs/IMG_0259.png" width="600"/>
 
 - Procedure of LoC:
     1. Test Mode (Slow clock)
@@ -338,7 +339,7 @@ $Defect\ Level = 1 - Y^{1-FC}$ (*Brown & Williams* **Model**)
 ## Decompression
 
 # BIST
-![imgs/image.png](imgs/image%2041.png)
+<img src="imgs/image%2041.png" width="600"/>
 
 ## MBIST
 
