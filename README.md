@@ -1,16 +1,25 @@
 # DFT (Design for Testability)
 
 ## Contents
-### 1. [Fault Models](#fault-models)
+### [Fault Models](#fault-models)
 * [Stuck-at Faults](#multiple-stuck-at-faults-msfs)
 * [Bridging Faults](#bridging-faults-bfs)
 * [Delay Faults](#delay-faults)
   
-### 2. [Quality of Testing (Fault Coverage, Defect-Level)](#quality-of-testing)
-### 3. [Scan Chain](#scan-chain)
+### [Quality of Testing (Fault Coverage, Defect-Level)](#quality-of-testing)
+### [Scan Chain](#scan-chain)
 * [Launch on Shift (LoS, Skewed-load Testing)](#los-launch-on-shift-skewed-load-test)
 * [Launch on Capture (LoC, Broadside Testing)](#loc-launch-on-capture-broadside-test)
-### 4. [Low-Power Testing (Under Construction)](#low-power-testing)
+### [Test Pattern Generation (TPG) (Under Construction)](#test-pattern-generation-tpg)
+* [LFSR](#lfsr)
+* [MISR](#misr)
+### [Build in Self Test (BIST) (Under Construction)](#bist)
+* [LBIST](#lbist)
+* [MBIST](#mbist)
+### [Low-Power Testing (Under Construction)](#low-power-testing)
+### Refenreces:
+1. [Digital System Testing by Prof. Sying-Jyan Wang, National Chung Hsing University (NCHU)](https://vlsilab.cs.nchu.edu.tw/)
+2. [VLSI Testing by Prof. James Chien-Mo Li, National Taiwan University (NTU)](https://www.youtube.com/playlist?list=PLvd8d-SyI7hjk_Ci0zpTqImAtpEjdK5JF)
 
 ## Why do we need DFT?
 
@@ -322,21 +331,19 @@ $Defect\ Level = 1 - Y^{1-FC}$ (*Brown & Williams* **Model**)
     3. Test Mode
         1. Pulse the clock to scan-out the result
 
-# BIST
-
-![imgs/image.png](imgs/image%2041.png)
-
+# Test Pattern Generation (TPG)
+## LFSR
+## MISR
 ## Compression
-
 ## Decompression
 
-## LFST
+# BIST
+![imgs/image.png](imgs/image%2041.png)
 
-## MISR
+## MBIST
 
-# MBIST
+## LBIST
 
-# LBIST
 
 # Low-Power Testing
 
@@ -397,6 +404,3 @@ $Defect\ Level = 1 - Y^{1-FC}$ (*Brown & Williams* **Model**)
 - **Benefits**:
     - Limits power usage by controlling the test environment more effectively.
     - Reduces the complexity of test patterns as the test engine is integrated into the chip.
-
-![imgs/image.png](imgs/image%2042.png)
-
