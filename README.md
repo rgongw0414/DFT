@@ -202,7 +202,7 @@ Slow-to-fall delay falut
 
 ## FC & DL (DPM)
 
-$Fault\ Coverage=\frac{\#Detected\ Faults} {\#Total\ Faults}$
+$Fault\ Coverage=\frac{The\ number\ of\ Detected\ Faults} {The\ number\ of\ Total\ Faults}$
 - The fraction of faults not detected by the testing process (missed faults by the test set)
   
 $Defect\ Level = 1 - Y^{1-FC}$ (*Brown & Williams* **Model**)
