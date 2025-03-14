@@ -2,7 +2,7 @@
 
 ## Contents
 ### [Fault Models](#fault-models)
-* [Stuck-at Faults](#multiple-stuck-at-faults-msfs)
+* [Stuck-at Faults](#single-stuck-at-faults-ssf)
 * [Bridging Faults](#bridging-faults-bfs)
 * [Delay Faults](#delay-faults)
   
@@ -89,7 +89,7 @@
 
 <img src="imgs/image%2010.png" width="600"/>
 
-## SSF
+## Single Stuck-at Faults (SSF)
 * One signal line (net) in the network of logic gates is fixed to logic 0 or logic 1
   * 2 SSFs (s@1 or s@0) per node
 * Short Circuits: A short between a node and power (Vdd) or ground (Gnd)
