@@ -288,7 +288,7 @@ $Defect\ Level = 1 - Y^{1-FC}$ (*Brown & Williams* **Model**)
 
 ### LoS (Launch on Shift, Skewed-load Test)
 
-<img src="imgs/IMG_0256.png" width="600"/>
+<img src="imgs/IMG_0256.jpeg" width="600"/>
 
 - The transition is launched at $t_4$ (while in TEST MODE, aka SHIFTING TESTING PATTERNS)
 - Procedure of LoS:
@@ -305,7 +305,7 @@ $Defect\ Level = 1 - Y^{1-FC}$ (*Brown & Williams* **Model**)
 - Since SE is a global signal, consequently, to de/assert the signal, it might suffer from long delay as it takes time from the PI to the FFs, then cause incorrect test result (false positive or false negative).
     - If SE pull-down dealy > path/gate delay, the capture clock cannot capture the fault.
         
-        <img src="imgs/IMG_0260.png" width="600"/>
+        <img src="imgs/IMG_0260.jpeg" width="600"/>
         
 
 ### LoC (Launch on Capture, Broadside Test)
@@ -318,7 +318,7 @@ $Defect\ Level = 1 - Y^{1-FC}$ (*Brown & Williams* **Model**)
 
 [https://www.youtube.com/watch?v=PEaZ5XUe0Mk](https://www.youtube.com/watch?v=PEaZ5XUe0Mk)
 
-<img src="imgs/IMG_0259.png" width="600"/>
+<img src="imgs/IMG_0259.jpeg" width="600"/>
 
 - Procedure of LoC:
     1. Test Mode (Slow clock)
