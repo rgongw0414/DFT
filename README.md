@@ -19,7 +19,7 @@
 * [LBIST](#lbist)
 * [MBIST](#mbist)
 ### [Low-Power Testing (Under Construction)](#low-power-testing)
-### [References](#refenreces)
+### [References](#references-1)
 
 
 ## Why do we need DFT?
@@ -409,6 +409,6 @@ $Defect\ Level = 1 - Y^{1-FC}$ (*Brown & Williams* **Model**)
     - Limits power usage by controlling the test environment more effectively.
     - Reduces the complexity of test patterns as the test engine is integrated into the chip.
 
-# Refenreces:
+# References:
 1. [Digital System Testing by Prof. Sying-Jyan Wang, National Chung Hsing University (NCHU)](https://vlsilab.cs.nchu.edu.tw/)
 2. [VLSI Testing by Prof. James Chien-Mo Li, National Taiwan University (NTU)](https://www.youtube.com/playlist?list=PLvd8d-SyI7hjk_Ci0zpTqImAtpEjdK5JF)
