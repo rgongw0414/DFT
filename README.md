@@ -50,11 +50,11 @@
 
 - Whether B is 0 or 1, K will always be 0.
     
-    <img src="DFT%20(Design%20for%20Testability)%201adda2873a1280999d76fe6138c55609/image%203.png" width=550/>
+    <img src="DFT%20(Design%20for%20Testability)%201adda2873a1280999d76fe6138c55609/image%203.png" width=500/>
     
 - Resolution:
     
-    <img src="DFT%20(Design%20for%20Testability)%201adda2873a1280999d76fe6138c55609/image%204.png" width=550/>
+    <img src="DFT%20(Design%20for%20Testability)%201adda2873a1280999d76fe6138c55609/image%204.png" width=500/>
     
 
 ### Input Scannign algorithm
@@ -62,16 +62,16 @@
 - Using **truth table** takes **huge memory** to determine the output value of logic gates
 - Not Efficient for multi-input logic gates
 
-<img src="DFT%20(Design%20for%20Testability)%201adda2873a1280999d76fe6138c55609/image%205.png" width=550/>
+<img src="DFT%20(Design%20for%20Testability)%201adda2873a1280999d76fe6138c55609/image%205.png" width=500/>
 
 - By scanning ***controlling values*** and ***unknown values***, efficiently determine the gate output in **logic simulation**
     
-    <img src="DFT%20(Design%20for%20Testability)%201adda2873a1280999d76fe6138c55609/image%206.png" width=550/>
+    <img src="DFT%20(Design%20for%20Testability)%201adda2873a1280999d76fe6138c55609/image%206.png" width=500/>
     
 
 # Quality of Testing
 
-<img src="DFT%20(Design%20for%20Testability)%201adda2873a1280999d76fe6138c55609/image%207.png" width=550/>
+<img src="DFT%20(Design%20for%20Testability)%201adda2873a1280999d76fe6138c55609/image%207.png" width=500/>
 
 ## FC & DL (DPM)
 
@@ -83,30 +83,30 @@
 
 # ATPG
 
-<img src="DFT%20(Design%20for%20Testability)%201adda2873a1280999d76fe6138c55609/image%208.png" width=550/>
+<img src="DFT%20(Design%20for%20Testability)%201adda2873a1280999d76fe6138c55609/image%208.png" width=500/>
 
-<img src="DFT%20(Design%20for%20Testability)%201adda2873a1280999d76fe6138c55609/image%209.png" width=550/>
+<img src="DFT%20(Design%20for%20Testability)%201adda2873a1280999d76fe6138c55609/image%209.png" width=500/>
 
 ## Design Rule Check (DRC)
 
-<img src="DFT%20(Design%20for%20Testability)%201adda2873a1280999d76fe6138c55609/image%2010.png" width=550/>
+<img src="DFT%20(Design%20for%20Testability)%201adda2873a1280999d76fe6138c55609/image%2010.png" width=500/>
 
-<img src="DFT%20(Design%20for%20Testability)%201adda2873a1280999d76fe6138c55609/image%2011.png" width=550/>
+<img src="DFT%20(Design%20for%20Testability)%201adda2873a1280999d76fe6138c55609/image%2011.png" width=500/>
 
 ## Gated Clock
 
-<img src="DFT%20(Design%20for%20Testability)%201adda2873a1280999d76fe6138c55609/image%2012.png" width=550/>
+<img src="DFT%20(Design%20for%20Testability)%201adda2873a1280999d76fe6138c55609/image%2012.png" width=500/>
 
-<img src="DFT%20(Design%20for%20Testability)%201adda2873a1280999d76fe6138c55609/image%2013.png" width=550/>
+<img src="DFT%20(Design%20for%20Testability)%201adda2873a1280999d76fe6138c55609/image%2013.png" width=500/>
 
 - Use FF, so the enable must hold long enough to start pulsing the clock
 - Only start pulsing the clock when SE in up
 
-<img src="DFT%20(Design%20for%20Testability)%201adda2873a1280999d76fe6138c55609/image%2014.png" width=550/>
+<img src="DFT%20(Design%20for%20Testability)%201adda2873a1280999d76fe6138c55609/image%2014.png" width=500/>
 
 ### Combinational Feedback Loop
 
-<img src="DFT%20(Design%20for%20Testability)%201adda2873a1280999d76fe6138c55609/image%2015.png" width=550/>
+<img src="DFT%20(Design%20for%20Testability)%201adda2873a1280999d76fe6138c55609/image%2015.png" width=500/>
 
 # References:
 1. [Digital System Testing by Prof. Sying-Jyan Wang, National Chung Hsing University (NCHU)](https://vlsilab.cs.nchu.edu.tw/)
