@@ -1,6 +1,6 @@
 # DFT (Design for Testability)
 
-[Logic Simulation](#logic-simulation-1)
+[Logic Simulation](#logic-simulation)
 
 [Quality of Testing (Fault Coverage, Defect-Level)](#quality-of-testing)
 
@@ -14,7 +14,7 @@
 
 [BIST](DFT%20(Design%20for%20Testability)%201adda2873a1280999d76fe6138c55609/BIST%201b7da2873a128090aeb8d4b744e7b9e8.md)
 
-[Low Power Testing](DFT%20(Design%20for%20Testability)%201adda2873a1280999d76fe6138c55609/Low%20Power%20Testing%201b7da2873a12804299ccd8065cbe3ad3.md)
+[Low Power Testing (Under Construction)](DFT%20(Design%20for%20Testability)%201adda2873a1280999d76fe6138c55609/Low%20Power%20Testing%201b7da2873a12804299ccd8065cbe3ad3.md)
 
 [References](#references-1)
 
