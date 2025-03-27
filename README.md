@@ -75,9 +75,9 @@
 
 ## FC & DL (DPM)
 
-- $Fault\ Coverage=\frac{\#Detected\ Faults} {\#Total\ Faults}$
+- $Fault\ Coverage=\frac{The\ num\ of\ Detected\ Faults} {The\ num\ of\ Total\ Faults}$
     - The fraction of faults not detected by the testing process (missed faults by the test set)
-- $Defect\ Level = 1 - Y^{1-FC}$ (*Brown & Williams* **Model**)
+- $Defect\ Level = 1 - Y^{1-FC}$ (*Brown & Williams **Model***)
     - It’s a model for **PREDICTING** the **% of Test Escape**
     - The probability that a defective chip remains undetected and is shipped as a "good" chip
 
